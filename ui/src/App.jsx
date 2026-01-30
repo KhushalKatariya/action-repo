@@ -4,6 +4,7 @@ import "./App.css";
 
 function App() {
   const [events, setEvents] = useState([]);
+  const [count, setCount] = useState(0);
 
   const loadEvents = async () => {
     const data = await fetchEvents();
