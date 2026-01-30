@@ -8,6 +8,7 @@ function App() {
 
   const handleChangeCount = () => {
     // just update
+    setCount(count + 1);
   }
 
   const loadEvents = async () => {
@@ -23,6 +24,7 @@ function App() {
   return (
     <div style={{ padding: 20 }}>
       <h1>Welcome to the GitHub Activity Feed</h1>
+      <button onClick={handleChangeCount}>Update Count: {count}</button>
       <h2>GitHub Activity Feed</h2>
       {events.map((e) => (
         <p key={e._id}>
