@@ -6,6 +6,10 @@ function App() {
   const [events, setEvents] = useState([]);
   const [count, setCount] = useState(0);
 
+  const handleChangeCount = () => {
+    // just update
+  }
+
   const loadEvents = async () => {
     const data = await fetchEvents();
     setEvents(data);
