@@ -17,6 +17,7 @@ function App() {
   }, []);
   return (
     <div style={{ padding: 20 }}>
+      <h1>Welcome to the GitHub Activity Feed</h1>
       <h2>GitHub Activity Feed</h2>
       {events.map((e) => (
         <p key={e._id}>
