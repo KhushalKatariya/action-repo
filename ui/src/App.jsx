@@ -8,7 +8,7 @@ function App() {
 
   const handleChangeCount = () => {
     // just update
-    setCount(count + 1);
+    setCount(count + 2); // update count + 1 to count + 2
   }
 
   const loadEvents = async () => {
